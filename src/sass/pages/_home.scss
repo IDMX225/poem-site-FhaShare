@@ -110,13 +110,13 @@ footer {
   transition: opacity 0.5s ease-in-out;
 }
 
+.poem-text-thai-pronunciation:hover {
+  display: none;
+}
+
 .poem-text-thai-pronunciation:hover + .poem-text-thai {
   display: block;
   opacity: 1;
-}
-
-.poem-text-thai {
-  transition: all 0.3s ease-in-out;
 }
 
 /* Large screens */
