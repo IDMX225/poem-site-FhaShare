@@ -97,6 +97,21 @@ footer {
   font-size: clamp(0.5rem, 3vw + 0.5rem, 1rem);
 }
 
+/* Hide the Thai text by default */
+.poem-text-thai {
+  display: none;
+}
+
+/* Show the Thai text when hovering over the pronunciation */
+.poem-text-thai-pronunciation:hover + .poem-text-thai {
+  display: block;
+}
+
+/* Optional: smooth transition effect */
+.poem-text-thai {
+  transition: all 0.3s ease-in-out;
+}
+
 /* Large screens */
 @media screen and (min-width: 1400px) {
   .thumbnail-container-large-screen {
