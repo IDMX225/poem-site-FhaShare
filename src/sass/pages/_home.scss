@@ -105,25 +105,16 @@ footer {
 }
 
 /* hover */
-.poem-text-thai {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-.poem-text-thai-pronunciation {
-  transition: opacity 0.5s ease-in-out;
-}
-
-.poem-text-thai-pronunciation:hover {
-  display: none;
-}
-
-.poem-text-thai-pronunciation:hover + .poem-text-thai {
-  display: block;
+.poem-text-thai-pronunciation:hover::before {
+  content: "<p>แล้วสอนว่าอย่าไว้ใจมนุษย์<br>มันแสนสุดลึกล้ำเหลือกำหนด</p>
+  <p>ถึงเถาวัลย์พันเกี่ยวที่เลี้ยวลด<br>ก็ไม่คดเหมือนหนึ่งในน้ำใจคน</p>
+  <p>มนุษย์นี้ที่รักอยู่สองสถาน<br>บิดามารดารักมักเป็นผล</p>
+  <p>ที่พึ่งหนึ่งพึ่งได้แต่กายตน<br>เกิดเป็นคนคิดเห็นจึงเจรจา</p>
+  <p>แม้ใครรักรักมั่งชังชังตอบ<br>ให้รอบคอบคิดอ่านนะหลานหนา</p>
+  <p>รู้สิ่งใดไม่สู้รู้วิชา<br>รู้รักษาตัวรอดเป็นยอดดี</p>";
+  color: #6c251c; /* Change text color when hovered */
+  font-family: "Charm"; /* Change font style when hovered */
+  display: block; /* Ensure the text is displayed */
 }
 
 /* Large screens */
