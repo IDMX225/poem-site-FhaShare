@@ -106,8 +106,11 @@ footer {
 
 /* hover */
 .poem-text-thai {
-  visibility: hidden;
-  opacity: 0;  
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
@@ -116,13 +119,11 @@ footer {
 }
 
 .poem-text-thai-pronunciation:hover {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 .poem-text-thai-pronunciation:hover + .poem-text-thai {
-  visibility: visible;  
-  opacity: 1;
+  display: block;
 }
 
 /* Large screens */
