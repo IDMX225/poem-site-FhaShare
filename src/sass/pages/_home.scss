@@ -118,11 +118,13 @@ footer {
 
   /* hover */
   .thumbnail-container-large-screen:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     color: #000000;
-    margin: 0;
-    padding: 0;
-}
+  }
+
+  .thumbnail-container-large-screen:hover p::first-letter {
+    color: #000000;
+  }
 
   .thumbnail-container-large-screen p::first-letter {
       color: white;
