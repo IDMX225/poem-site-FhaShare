@@ -104,14 +104,6 @@ footer {
   font-size: clamp(0.5rem, 3vw + 0.5rem, 1rem);
 }
 
-/* hover */
-.poem-text-thai-pronunciation:hover::before {
-  content: "แล้วสอนว่าอย่าไว้ใจมนุษย์ มันแสนสุดลึกล้ำเหลือกำหนด ถึงเถาวัลย์พันเกี่ยวที่เลี้ยวลด ก็ไม่คดเหมือนหนึ่งในน้ำใจคน มนุษย์นี้ที่รักอยู่สองสถาน บิดามารดารักมักเป็นผล ที่พึ่งหนึ่งพึ่งได้แต่กายตน เกิดเป็นคนคิดเห็นจึงเจรจา แม้ใครรักรักมั่งชังชังตอบ ให้รอบคอบคิดอ่านนะหลานหนา รู้สิ่งใดไม่สู้รู้วิชา รู้รักษาตัวรอดเป็นยอดดี";
-  color: #6c251c; /* Change text color when hovered */
-  font-family: "Charm"; /* Change font style when hovered */
-  display: block; /* Ensure the text is displayed */
-}
-
 /* Large screens */
 @media screen and (min-width: 1400px) {
   .thumbnail-container-large-screen {
@@ -122,6 +114,14 @@ footer {
       margin: 0;
       padding: 0;
   }
+
+  /* hover */
+  .thumbnail-container-large-screen:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
 
   .thumbnail-container-large-screen p::first-letter {
       color: white;
@@ -154,7 +154,7 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 150px;
-      padding: 50px 150px;
+      padding: 100px 150px;
   }
 
   .poem-container .poem-text-thai-pronunciation {
